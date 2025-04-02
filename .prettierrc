@@ -1,0 +1,8 @@
+{
+  "plugins": ["prettier-plugin-blade"],
+  "tabWidth": 2,
+  "bladeIndentSize": 2,
+  "bladeBracketSameLine": true,
+  "indentInnerHtml": false,
+  "htmlWhitespaceSensitivity": "ignore"
+}
