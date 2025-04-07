@@ -7,7 +7,9 @@
 
   <div class="py-8 font-bold">
     <h3 class="group-hover:text-blue-800 transition-colors duration-300">
-      {{ $job->title }}
+      <a href=" {{ $job->url }}" target="_blank">
+        {{ $job->title }}
+      </a>
     </h3>
     <p class="text-sm mt-4">
       {{ $job->schedule }} - From {{ $job->salary }} USD
