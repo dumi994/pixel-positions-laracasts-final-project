@@ -31,8 +31,13 @@
           <a href="">Companies</a>
         </div>
         @auth
-          <div class="mt-10">
-            <a href="/jobs/create">Post a job</a>
+          <div class="mt-10 flex items-center">
+            <a class="mx-3" href="/jobs/create">Post a job</a>
+            <form class="mx-3" method="POST" action="/logout">
+              @csrf
+              @method("DELETE")
+              <button>Log out</button>
+            </form>
           </div>
         @endauth
 
