@@ -19,15 +19,13 @@ class JobFactory extends Factory
     public function definition(): array
     {
         return [
-            'employer_id'   => Employer::factory(),
-            'title'         => fake()->jobTitle(),
-            'description'   => fake()->sentence(),
-            'requirements'  => fake()->sentence(), // Aggiungi questa riga
-            'salary'        => fake()->numberBetween(30000, 150000), // Usa numeri per numberBetween
-            'location'      => 'Remote',
-            'schedule'      => 'Full Time',
-            'url'           => fake()->url(),
-            'featured'      => false,
+            'employer_id' => Employer::factory(),
+            'title' => fake()->jobTitle,
+            'salary' => fake()->randomElement(['$50,000 USD', '$90,000 USD', '$150,000 USD']),
+            'location' => 'Remote',
+            'schedule' => 'Full Time',
+            'url' => fake()->url,
+            'featured' => false,
         ];
     }
 }
